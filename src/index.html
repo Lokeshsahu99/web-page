@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section Slider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="relative w-full h-screen overflow-hidden">
+        <div class="slider relative w-full h-full">
+            <div class="slide absolute w-full h-full flex items-center justify-center bg-cover bg-center" style="background-image: url('../images/slide10.jpg');"></div>
+            <div class="slide absolute w-full h-full flex items-center justify-center bg-cover bg-center opacity-0" style="background-image: url('../images/slide9.jpg');"></div>
+            
+        </div>
+            </div>
+
+    <script>
+        let slides = document.querySelectorAll(".slide");
+        let currentIndex = 0;
+        let nextButton = document.getElementById("next");
+
+        function showNextSlide() {
+            let nextIndex = (currentIndex + 1) % slides.length;
+            gsap.to(slides[currentIndex], { opacity: 0, duration: 1 });
+            gsap.to(slides[nextIndex], { opacity: 1, duration: 1 });
+            currentIndex = nextIndex;
+        }
+
+        nextButton.addEventListener("click", showNextSlide);
+        setInterval(showNextSlide, 5000); // Auto-slide every 5 seconds
+    </script>
+</body>
+</html>

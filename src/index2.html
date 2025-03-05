@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section Slider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="bg-gray-100">
+    
+    <!-- Hero Section Slider -->
+    <div class="w-full h-screen relative overflow-hidden flex items-center">
+        <div class="slider relative w-full h-full">
+            <div class="slide absolute w-full h-full flex items-center justify-start bg-cover bg-center opacity-100 transition-opacity duration-1000" style="background-image: url('../images/slide10.jpg'); z-index: 1;">
+                <div class="ml-10 text-black text-left max-w-md">
+                    <h1 class="text-5xl font-bold">WE ARE <br> CONSTRUCT</h1>
+                    <p class="mt-4 text-lg text-gray-700">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="mt-6 flex space-x-4">
+                        <button class="bg-yellow-500 text-white px-6 py-3 rounded font-semibold">ABOUT US</button>
+                        <button class="bg-yellow-500 text-white px-6 py-3 rounded font-semibold">SERVICES</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide absolute w-full h-full flex items-center justify-start bg-cover bg-center opacity-0 transition-opacity duration-1000" style="background-image: url('../images/slide9.jpg'); z-index: 0;">
+                <div class="ml-10 text-black text-left max-w-md">
+                    <h1 class="text-5xl font-bold">WE ARE <br> CONSTRUCT</h1>
+                    <p class="mt-4 text-lg text-gray-700">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="mt-6 flex space-x-4">
+                        <button class="bg-yellow-500 text-white px-6 py-3 rounded font-semibold">ABOUT US</button>
+                        <button class="bg-yellow-500 text-white px-6 py-3 rounded font-semibold">SERVICES</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation Buttons -->
+        <button id="prev" class="absolute left-5 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full z-10">&#10094;</button>
+        <button id="next" class="absolute right-5 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full z-10">&#10095;</button>
+    </div>
+    
+    <!-- Our Services Section -->
+    <div class="container mx-auto text-center mt-10">
+        <h2 class="text-3xl font-bold text-gray-900">Our Services</h2>
+        <p class="text-gray-600 mt-2">We Provide Great Services for our Clients in All Projects</p>
+    </div>
+    
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+        <div class="service-card text-center">
+            <img src="../images/services-1.jpg" alt="Chemical Engineering" class="rounded-md">
+            <h3 class="font-semibold mt-3">Chemical Engineering</h3>
+        </div>
+        <div class="service-card text-center">
+            <img src="../images/services-2.jpg" alt="Energy & Power Engineering" class="rounded-md">
+            <h3 class="font-semibold mt-3">Energy & Power Engineering</h3>
+        </div>
+        <div class="service-card text-center">
+            <img src="../images/services-3.jpg" alt="Oil & Gas Engineering" class="rounded-md">
+            <h3 class="font-semibold mt-3">Oil & Gas Engineering</h3>
+        </div>
+        <div class="service-card text-center">
+            <img src="../images/services-4.jpg" alt="Civil Engineering" class="rounded-md">
+            <h3 class="font-semibold mt-3">Civil Engineering</h3>
+        </div>
+        <div class="service-card text-center">
+            <img src="../images/services-5.jpg" alt="Agriculture Engineering" class="rounded-md">
+            <h3 class="font-semibold mt-3">Agriculture Engineering</h3>
+        </div>
+        <div class="service-card text-center">
+            <img src="../images/services-6.jpg" alt="Mechanical Engineering" class="rounded-md">
+            <h3 class="font-semibold mt-3">Mechanical Engineering</h3>
+        </div>
+    </div>
+
+
+
+     <!-- Experience Section -->
+     <div class="container mx-auto flex flex-col md:flex-row items-center gap-10 mt-20 px-5">
+        <div class="relative experience-image">
+            <img src="../images/pic11.jpg" alt="Engineer" class="rounded-md border-8 border-yellow-500">
+        </div>
+        <div class="flex-1 experience-text">
+            <div class="flex items-center gap-4">
+                <div class="border-4 border-yellow-500 p-4 text-center experience-years">
+                    <h2 class="text-4xl font-bold">26</h2>
+                    <p class="text-sm text-gray-600 uppercase">Years Experience Working</p>
+                </div>
+            </div>
+            <h2 class="text-3xl font-bold mt-4">Architecture is a visual art, and The Building</h2>
+            <p class="text-gray-600 mt-2">Praesent pharetra orci odio, ut mattis tellus ullamcorper ornare. Suspendisse ullamcorper metus in erat viverra, vehicula pharetra dolor accumsan.</p>
+            <div class="mt-6 flex space-x-4">
+                <button class="bg-yellow-500 text-white px-6 py-3 rounded font-semibold">View Portfolio</button>
+                <button class="bg-black text-white px-6 py-3 rounded font-semibold">View Portfolio</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="px-6 flex items-center justify-center text-center md:text-left bg-cover bg-center mt-20 h-72" 
+    style="background-image: url('../images/1\ \(1\).jpg');">
+    <h1 class="container mx-auto text-3xl text-gray-400 max-w-4xl">
+        We provide innovative <span class="text-yellow-500 font-semibold">Product Solutions</span> for sustainable progress. Our professional team works to increase productivity and cost-effectiveness in the market.
+    </h1>
+</div>
+
+<div class="container w-3xl mx-auto flex flex-col-reverse md:flex-row bg-white shadow-lg rounded-lg overflow-hidden mt-[-5rem]">
+
+    <img src="../images/image-1.jpg" alt="Industry Image" class="w-full md:w-1/2 h-auto">
+    <div class="p-6 md:w-1/2">
+        <h3 class="text-2xl font-semibold text-gray-900">Why You Choose Us</h3>
+        <p class="text-gray-600 mt-4 text-sm">
+            We have facilities to produce advanced industrial applications based on specially developed technology. Our team ensures quality development based on changing user needs. 
+        </p>
+        <p class="text-gray-600 mt-2 text-sm">
+            General repair & industrial machinery with up-to-date, sustainable custom manufacturing solutions.
+        </p>
+
+        <div class="grid grid-cols-2 gap-4 mt-6">
+            <div class="flex items-center space-x-2">
+                <span class="text-yellow-500 text-lg">&#128338;</span>
+                <p class="text-gray-800 font-semibold text-sm">Great Technology</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <span class="text-yellow-500 text-lg">&#9201;</span>
+                <p class="text-gray-800 font-semibold text-sm">Delivery Ontime</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <span class="text-yellow-500 text-lg">&#128188;</span>
+                <p class="text-gray-800 font-semibold text-sm">Certified Engineers</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <span class="text-yellow-500 text-lg">&#128081;</span>
+                <p class="text-gray-800 font-semibold text-sm">Best Branding</p>
+            </div>
+        </div>
+    </div>
+
+   
+</div>
+
+<section class="relative bg-cover bg-center py-12" style="background-image: url('../images/bg11.jpg');">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+        
+        <!-- Stats Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- Counter 1 -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-800"><span class="counter" data-count="1132">0</span>+</h2>
+                <div class="w-12 h-1 bg-yellow-500 mx-auto md:mx-0 my-2"></div>
+                <p class="text-gray-600">Projects</p>
+            </div>
+            <!-- Counter 2 -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-800"><span class="counter" data-count="800">0</span>+</h2>
+                <div class="w-12 h-1 bg-yellow-500 mx-auto md:mx-0 my-2"></div>
+                <p class="text-gray-600">Clients</p>
+            </div>
+            <!-- Counter 3 -->
+            <div>
+                <h2 class="text-3xl font-bold text-gray-800"><span class="counter" data-count="99">0</span>%</h2>
+                <div class="w-12 h-1 bg-yellow-500 mx-auto md:mx-0 my-2"></div>
+                <p class="text-gray-600">Satisfaction</p>
+            </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="mt-8 md:mt-0">
+            <img src="../images/pic11.jpg" alt="Engineer" class="w-64 md:w-80 object-cover">
+        </div>
+    </div>
+</section>
+
+
+
+<section class="container mx-auto px-6 py-12">
+    <!-- Heading -->
+    <div class="text-center">
+        <h2 class="text-3xl font-bold text-gray-800">Design Projects</h2>
+        <p class="text-gray-600 mt-2 max-w-xl mx-auto">
+            There are many variations of passages of Lorem Ipsum typesetting industry. 
+        </p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="flex justify-center space-x-6 mt-6 text-gray-700">
+        <button class="filter-btn active bg-yellow-500 text-white px-4 py-2 rounded" data-filter="all">All</button>
+        <button class="filter-btn bg-gray-200 px-4 py-2 rounded" data-filter="construction">Construction</button>
+        <button class="filter-btn bg-gray-200 px-4 py-2 rounded" data-filter="architecture">Architecture</button>
+        <button class="filter-btn bg-gray-200 px-4 py-2 rounded" data-filter="consulting">Consulting</button>
+        <button class="filter-btn bg-gray-200 px-4 py-2 rounded" data-filter="mechanical">Mechanical</button>
+    </div>
+
+    <!-- Image Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+        <img src="../images/pic11.jpg" alt="Construction" class="project-image construction rounded-lg shadow-md">
+        <img src="../images/pic11.jpg" alt="Architecture" class="project-image architecture rounded-lg shadow-md">
+        <img src="../images/pic11.jpg" alt="Consulting" class="project-image consulting rounded-lg shadow-md">
+        <img src="../images/pic11.jpg" alt="Mechanical" class="project-image mechanical rounded-lg shadow-md">
+        <img src="../images/pic11.jpg" alt="Construction" class="project-image construction rounded-lg shadow-md">
+        <img src="../images/pic11.jpg" alt="Architecture" class="project-image architecture rounded-lg shadow-md">
+    </div>
+</section>
+
+
+
+
+<section class="container mx-auto px-6 lg:px-12 py-12">
+    <div class="flex flex-col md:flex-row items-center">
+        <!-- Left Text Section -->
+        <div id="text-section" class="w-full md:w-1/2 text-center md:text-left space-y-4 opacity-0">
+            <h1 class="text-4xl font-light text-gray-800">
+                Automative <br> 
+                <span class="font-bold">Manufacturing.</span>
+            </h1>
+            <p class="text-gray-600">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+            <a href="#" class="inline-block border border-red-500 text-red-500 px-6 py-2 mt-4 rounded hover:bg-red-500 hover:text-white transition duration-300">
+                ABOUT US
+            </a>
+        </div>
+
+        <!-- Right Image Section -->
+        <div id="image-section" class="w-full md:w-1/2 mt-6 md:mt-0 opacity-0">
+            <img src="image.png" alt="Manufacturing Plant" class="w-full rounded-lg shadow-md">
+        </div>
+    </div>
+</section>
+
+
+    
+    <script>
+        let slides = document.querySelectorAll(".slide");
+        let currentIndex = 0;
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    gsap.to(slide, { opacity: 1, duration: 1 });
+                    slide.style.zIndex = 1;
+                } else {
+                    gsap.to(slide, { opacity: 0, duration: 1 });
+                    slide.style.zIndex = 0;
+                }
+            });
+            currentIndex = index;
+        }
+        
+        function showNextSlide() {
+            let nextIndex = (currentIndex + 1) % slides.length;
+            showSlide(nextIndex);
+        }
+        
+        function showPrevSlide() {
+            let prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(prevIndex);
+        }
+        
+        document.getElementById("next").addEventListener("click", showNextSlide);
+        document.getElementById("prev").addEventListener("click", showPrevSlide);
+        
+        setInterval(showNextSlide, 5000);
+
+        // Services Section Animation
+        gsap.from(".service-card", {
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power3.out"
+        });
+
+
+
+        gsap.from(".experience-image", { opacity: 0, x: -100, duration: 1, ease: "power3.out" });
+    gsap.from(".experience-text", { opacity: 0, x: 100, duration: 1, ease: "power3.out", delay: 0.3 });
+    gsap.from(".experience-years", { opacity: 0, scale: 0.5, duration: 1, ease: "elastic.out(1, 0.5)", delay: 0.6 });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+            gsap.registerPlugin();
+
+            let counters = document.querySelectorAll(".counter");
+            let section = document.querySelector("section");
+
+            function animateCounters() {
+                counters.forEach(counter => {
+                    let count = counter.getAttribute("data-count");
+                    gsap.to(counter, {
+                        duration: 2,
+                        innerText: count,
+                        snap: { innerText: 1 },
+                        ease: "power1.out"
+                    });
+                });
+            }
+
+            let observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    animateCounters();
+                    observer.disconnect();
+                }
+            }, { threshold: 0.5 });
+
+            observer.observe(section);
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            gsap.from(".project-image", {
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power2.out"
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            gsap.from(".project-image", {
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power2.out"
+            });
+
+            const filterButtons = document.querySelectorAll(".filter-btn");
+            const images = document.querySelectorAll(".project-image");
+
+            filterButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    let filter = button.getAttribute("data-filter");
+
+                    // Button active state change
+                    filterButtons.forEach(btn => btn.classList.remove("bg-yellow-500", "text-white"));
+                    button.classList.add("bg-yellow-500", "text-white");
+
+                    images.forEach(img => {
+                        if (filter === "all" || img.classList.contains(filter)) {
+                            gsap.to(img, { opacity: 1, scale: 1, duration: 0.5, display: "block" });
+                        } else {
+                            gsap.to(img, { opacity: 0, scale: 0.8, duration: 0.5, display: "none" });
+                        }
+                    });
+                });
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            gsap.to("#text-section", { 
+                duration: 1, 
+                opacity: 1, 
+                x: 0, 
+                from: { x: -100 }
+            });
+
+            gsap.to("#image-section", { 
+                duration: 1, 
+                opacity: 1, 
+                x: 0, 
+                from: { x: 100 }, 
+                delay: 0.5
+            });
+        });
+    </script>
+     
+
+</body>
+</html>
